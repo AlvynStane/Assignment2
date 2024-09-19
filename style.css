@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 900px;
+    height: 450px;
+    background-color: #1E3257;
+    padding: 20px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+}   
+
+.cake_img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: fill;
+    border: 3px solid #E6BF98;
+    border-radius: 15px;
+}
+
+.left {
+    margin-right: 20px;
+}
+
+.right {
+    margin: 10px;
+    max-width: 500px;
+}
+
+.title {
+    font-family: cursive;
+    font-size: 42px;
+    color: #ff3ea5;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: cursive;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #79fb72;
+}
