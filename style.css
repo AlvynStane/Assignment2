@@ -4,25 +4,50 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom right, #8e4af2, #501780, #21053a);
+    background-image: linear-gradient(135deg, #8e4af2, #501780, #21053a);
     background-color: #501780;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
     margin: 50px auto;
-}   
+    max-width: 900px;
+}
+
+@keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    to {
+      -webkit-mask-position: -50%;
+    }
+}
+
+.cont-color:hover{
+    -webkit-mask-image: linear-gradient(-75deg, rgba(255,255,255,.6) 30%, #fff 50%, rgba(255,255,255,.6) 70%);
+    mask-image: linear-gradient(-75deg, rgba(255,255,255,.6) 30%, #fff 50%, rgba(255,255,255,.6) 70%);
+    -webkit-mask-size: 200%;
+    mask-size: 200%;
+    animation: shine 2s infinite;
+    -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
 
 .cake_img {
     object-fit: fill;
+    max-width: 100%;
+    height: auto;
     border: 3px solid #b5031d;
     border-radius: 15px;
+    z-index: 2;
 }
 
 .title {
-    font-family: cursive;
-    font-size: 42px;
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
     color: #ff3187;
     margin-bottom: 25px;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    /* z-index: 2; */
 }
 
 p {
@@ -31,4 +56,5 @@ p {
     font-size: 16px;
     line-height: 1.6;
     color: #ffcb35;
+    /* z-index: 2; */
 }
